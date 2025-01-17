@@ -18,11 +18,11 @@ const user = {
  * whether you use if statement to prevent errors or use optional chaining */
 
 console.log(user.address.state);    // undefined
+console.log(user.address.state.number);   // error
+console.log(user.address.state?.number);   // undefined
 
-
-
-
-// nullish coalescing
-const country = user.address?.country ?? "unknown"
-console.log(country);   // unknown
-/* if left operand is null or undefined, it returns value of the right operand */
+/**
+ * nullish coalescing
+ * if the left-hand side is null or undefined, use right-hand side
+ */
+console.log(user.address.state?.number ?? "unknown");   // unknown
