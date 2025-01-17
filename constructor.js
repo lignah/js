@@ -1,8 +1,5 @@
 "use strict"
 
-
-
-
 // when wanting to create multiple similar objects
 // use constructor(= object creation machine) 
 
